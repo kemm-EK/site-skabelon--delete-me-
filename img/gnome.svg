@@ -1,0 +1,19 @@
+<svg id="gnome" width="1100" height="1660" viewBox="0 0 1536 1030.48" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- boots and legs -->
+      <path d="M-13 -22L-12 -5H-1L-1 -22M5 -22L6 -5H17L14 -23" fill="#62513d" stroke="#493b30" stroke-width="2"/>
+      <path d="M-14 -7h14v8h-18q-3 -4 4 -8M5 -7h13q8 8 -1 8H4Z" fill="#50372c" stroke="#302823" stroke-width="2"/>
+      <!-- tunic and arms -->
+      <path d="M-15 -46Q0 -55 16 -46L19 -19H-20Z" fill="#63754d" stroke="#394735" stroke-width="3"/>
+      <path d="M-15 -43L-26 -28L-21 -23L-8 -36M14 -43L26 -28L21 -23L8 -36" fill="#63754d" stroke="#394735" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M-19 -25H18" stroke="#b8864b" stroke-width="4"/>
+      <circle cx="-1" cy="-25" r="3" fill="#d6b15f"/>
+      <!-- face and ears -->
+      <path d="M-13 -62q-10 -5 -13 0q5 12 15 9M13 -62q10 -5 13 0q-5 12 -15 9" fill="#e8b68e" stroke="#9b6b50" stroke-width="2"/>
+      <ellipse cx="0" cy="-56" rx="16" ry="17" fill="#e9bb95" stroke="#9b6b50" stroke-width="2"/>
+      <circle cx="-6" cy="-57" r="2" fill="#302b28"/><circle cx="6" cy="-57" r="2" fill="#302b28"/>
+      <path d="M-7 -49q7 5 14 0" fill="none" stroke="#825f50" stroke-width="2" stroke-linecap="round"/>
+      <ellipse cy="-53" rx="4" ry="5" fill="#d99d78"/>
+      <!-- iconic pointed cap -->
+      <path d="M-19 -67Q-10 -89 5 -82Q18 -76 20 -66Z" fill="#a54c3d" stroke="#68352e" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M-19 -66Q0 -71 20 -66" fill="none" stroke="#cf8060" stroke-width="5" stroke-linecap="round"/>    
+</svg>

@@ -1,0 +1,38 @@
+<svg id="gnome" width="110" height="166" viewBox="0 0 110 166" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Walking gnome">
+  <!-- ground shadow -->
+  <ellipse cx="55" cy="156" rx="20" ry="5" fill="#3B4030" fill-opacity="0.25"/>
+
+  <!-- left leg and boot -->
+  <path d="M42 111L43 141H52V111" fill="#62513D" stroke="#493B30" stroke-width="2"/>
+  <path d="M40 139H53V148H35C33 145 34 141 40 139Z" fill="#50372C" stroke="#302823" stroke-width="2"/>
+
+  <!-- right leg and boot -->
+  <path d="M60 111L61 141H71L69 111" fill="#62513D" stroke="#493B30" stroke-width="2"/>
+  <path d="M59 139H72C77 144 76 148 70 148H58L59 139Z" fill="#50372C" stroke="#302823" stroke-width="2"/>
+
+  <!-- body / tunic -->
+  <path d="M38 87C46 81 64 81 72 87L76 113H34L38 87Z" fill="#63754D" stroke="#394735" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- arms -->
+  <path d="M38 90L26 104L31 110L44 96" fill="#63754D" stroke="#394735" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M72 90L84 104L79 110L66 96" fill="#63754D" stroke="#394735" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- belt -->
+  <path d="M35 108H75" stroke="#B8864B" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="55" cy="108" r="3" fill="#D6B15F"/>
+
+  <!-- ears -->
+  <path d="M38 58C31 54 27 56 25 61C28 69 36 68 41 64" fill="#E8B68E" stroke="#9B6B50" stroke-width="2"/>
+  <path d="M72 58C79 54 83 56 85 61C82 69 74 68 69 64" fill="#E8B68E" stroke="#9B6B50" stroke-width="2"/>
+
+  <!-- head -->
+  <ellipse cx="55" cy="65" rx="16" ry="17" fill="#E9BB95" stroke="#9B6B50" stroke-width="2"/>
+  <circle cx="49" cy="64" r="2" fill="#302B28"/>
+  <circle cx="61" cy="64" r="2" fill="#302B28"/>
+  <path d="M48 72C52 76 58 76 62 72" stroke="#825F50" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="55" cy="68" rx="4" ry="5" fill="#D99D78"/>
+
+  <!-- pointed cap -->
+  <path d="M36 53C40 34 52 27 66 33C77 38 81 46 84 55L36 53Z" fill="#A54C3D" stroke="#68352E" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M36 54C51 50 68 50 84 54" stroke="#CF8060" stroke-width="5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interaktiv SVG | Eventnavn</title>
+    <link rel="stylesheet" href="./css/starter.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mystyle2.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-content">
+        <a class="site-logo" href="./">Gnome Recognition Foundation</a>
+        <nav class="site-nav">
+          <button>Menu</button>
+          <ul class="menu" id="menu" popover>
+            <li><a href="./" aria-current="page">Forside</a></li>
+            <li><a href="./svg.html">SVG 1</a></li>
+            <li><a href="./svg2.html">SVG 2</a></li>
+            <li><a href="./form.html">Formular</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="svg-page">
+        <header class="svg-intro">
+          <h1>Interaktiv SVG</h1>
+          <p>Indsæt din egen SVG og forbind den med punkterne nedenfor.</p>
+        </header>
+
+        <article class="svg-layout">
+          <div class="mingle-svg">
+            <svg class="event-map" viewBox="0 0 1536 1030.48">
+              <use href="../img/mingle.svg#background"></use>
+              <use class="gnome" href="../img/gnome-redrawn.svg#gnome"></use>
+            </svg>
+          </div>
+
+          <div class="panel">
+            <h2>Udforsk eventet</h2>
+            <p>Vælg et område på programmet og se robotten bevæge sig hen til næste stop. Hvert punkt viser en del af eventet.</p>
+            <div class="accordion">
+              <details class="accordion-item" name="accordion" data-position="first" id="details-first">
+                <summary>Workshop</summary>
+                <div>Start her, hent dit pass og få overblik over dagens program. Her møder du også de andre deltagere, før oplæggene begynder.</div>
+              </details>
+              <details class="accordion-item" name="accordion" data-position="second" id="details-second">
+                <summary>Stage</summary>
+                <div>På scenen deler oplægsholdere cases, idéer og metoder fra arbejdet med digitale produkter, design og nye teknologier.</div>
+              </details>
+              <details class="accordion-item" name="accordion" data-position="third" id="details-third">
+                <summary>Story Stage</summary>
+                <div>I Code Lab kan du prøve teknikkerne selv. Tag din computer med, eksperimentér med CSS og byg videre på dagens eksempler.</div>
+              </details>
+              <details class="accordion-item" name="accordion" data-position="fourth" id="details-fourth">
+                <summary>Music</summary>
+                <div>I Code Lab kan du prøve teknikkerne selv. Tag din computer med, eksperimentér med CSS og byg videre på dagens eksempler.</div>
+              </details>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>Eventnavn</p>
+        <p>Footer</p>
+      </div>
+    </footer>
+    <script src="./js/script2.js"></script>
+  </body>
+</html>

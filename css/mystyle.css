@@ -1,0 +1,342 @@
+@font-face {
+  font-family: iso;
+  src: url(../fonts/Isometra-Regular.ttf);
+}
+@font-face {
+  font-family: cha;
+  src: url(../fonts/ChangaOne-Regular.ttf);
+}
+@font-face {
+  font-family: rub;
+  src: url(../fonts/Rubik-VariableFont_wght.ttf);
+}
+
+@keyframes parallax {
+  from {
+    object-position: center;
+  }
+  to {
+    object-position: top;
+  }
+}
+
+.site-nav {
+  a {
+    font-family: cha;
+    font-weight: 100;
+  }
+}
+.section-type {
+  position: relative;
+  font-family: rub;
+  background-color: rgb(67, 65, 65);
+  color: #e1dfdf;
+  line-height: 1.2rem;
+  width: max-content;
+  height: min-content;
+  padding: 0 2.5rem 0.05rem 1.2rem;
+  margin-bottom: 0.5rem;
+  &::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: -25%;
+    width: 20px;
+    height: 20px;
+    border-radius: 35%;
+    background: var(--color-page);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 25%;
+    width: 20px;
+    height: 20px;
+    border-radius: 35%;
+    background: var(--color-page);
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 5px;
+  background-color: rgb(135, 46, 46);
+  color: rgb(239, 240, 240);
+  text-decoration: none;
+  margin: 0 1rem 0 0;
+  font: inherit;
+  font-family: cha;
+  height: max-content;
+}
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  & > img {
+    grid-area: 1/2;
+    height: 100%;
+    object-fit: cover;
+  }
+  & > div {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1lh min-content min-content;
+    row-gap: 1rem;
+    grid-area: 1/1;
+
+    h1 {
+      font-family: iso;
+    }
+    p {
+      font-family: rub;
+    }
+    .header-cta-container {
+      margin-top: 1rem;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}
+.stat-banner {
+  grid-template-columns: inherit;
+  grid-column: 1/-1;
+  width: 100%;
+  .stat-headline {
+    font-size: 1.2rem;
+    font-family: iso;
+  }
+
+  .banner-item-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .banner-item {
+    p {
+      font-family: rub;
+      font-size: 0.85rem;
+    }
+  }
+  :is(.stat-headline, p) {
+    text-align: center;
+  }
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  h2 {
+    font-family: iso;
+    font-size: 1rem;
+    min-height: 2lh;
+    display: flex;
+    align-items: flex-end;
+    margin: 0.5rem 0;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+
+    .card-content {
+      .card-img {
+        width: 100%;
+        aspect-ratio: 1/0.6;
+        img {
+          height: 100%;
+          object-fit: cover;
+          animation: parallax linear both;
+          animation-timeline: view();
+        }
+      }
+    }
+    p {
+      font-size: 0.8rem;
+    }
+    div:has(button) {
+      display: flex;
+      justify-content: center;
+    }
+    button {
+      justify-self: center;
+      margin-top: 0.5rem;
+      appearance: none;
+      border: none;
+      padding: 5px;
+      cursor: pointer;
+    }
+  }
+}
+.card-detail {
+  background-color: var(--color-surface);
+  width: clamp(200px, 50vw, 500px);
+  max-height: 90dvh;
+  overflow-y: auto;
+  margin: auto;
+  border-radius: 10px;
+  padding: 0 1rem 1.5rem 1rem;
+  border: 1px solid #ccc;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  .datetime {
+    color: #928d8d;
+  }
+  .tags {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  .admission {
+    background-color: rgb(213, 213, 213);
+    padding: 1px 4px;
+  }
+  h2 {
+    line-height: 1;
+  }
+  h3 {
+    font-family: iso;
+    font-size: 0.8rem;
+  }
+  div:first-of-type {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.1rem 1rem;
+    margin-bottom: 1rem;
+    p {
+      grid-column: 1;
+    }
+    p:last-of-type {
+      grid-row: 3;
+      grid-column: 1/-1;
+    }
+    img {
+      grid-row: 1 / span 2;
+      grid-column: 2;
+      margin-top: 1rem;
+    }
+  }
+  p,
+  li {
+    font-size: 0.8rem;
+    font-family: rub;
+    margin: 0.4rem 0;
+  }
+  p::first-letter {
+    font-weight: 500;
+  }
+  ul {
+    list-style: none;
+  }
+}
+#activity-details-1 {
+  li::before {
+    content: "\26CF ";
+    padding-right: 0.5rem;
+  }
+}
+#activity-details-2 {
+  li::before {
+    content: "\1F3B5 ";
+    padding-right: 0.5rem;
+  }
+}
+#activity-details-3 {
+  li::before {
+    content: "\269C ";
+    color: rgb(255, 102, 0);
+    padding-right: 0.5rem;
+  }
+}
+
+/* SVG */
+.svg-layout {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  gap: 1rem;
+}
+.gnome {
+  transform: translate(45%, 30%);
+  transition: transform 1.5s ease-in-out;
+}
+
+.accordion {
+  display: grid;
+  gap: 0.25rlh;
+  margin-top: 1rlh;
+}
+
+.accordion-item {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #e5dbf2;
+  transition: border, background;
+  transition-duration: 0.3s;
+
+  &:open {
+    border-color: #784fcf;
+    background: oklch(0.985 0.012 300);
+  }
+
+  summary {
+    cursor: pointer;
+    padding: 0.75lh;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rlh;
+    font-weight: 600;
+    transition: 0.3s;
+
+    &::marker {
+      content: none;
+    }
+
+    &:after {
+      /*content: "+";*/
+      content: var(--arrow-down);
+      width: 1rem;
+      height: 1rem;
+      transition: 0.3s;
+    }
+
+    .accordion-item:open & {
+      padding-block-end: 0.5rlh;
+      color: oklch(0.4 0.2 300);
+    }
+
+    .accordion-item:open &::after {
+      /*content: "–";*/
+      rotate: 180deg;
+    }
+  }
+
+  > div {
+    padding-bottom: 1rlh;
+    padding-inline: 0.75lh;
+  }
+}
+
+:is(.location-tea, .location-tinker, .location-story, .location-moonlight) {
+  transition:
+    filter 0.6s ease,
+    opacity 0.6s ease;
+}
+.semi-transparent {
+  opacity: 0.4;
+}
+.bright {
+  filter: brightness(200%);
+}
+
+/* De fire lokationer */
+.spot1 {
+  transform: translate(17%, 20%);
+}
+.spot2 {
+  transform: translate(75%, 30%);
+}
+.spot3 {
+  transform: translate(17%, 60%);
+}
+.spot4 {
+  transform: translate(75%, 63%);
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interaktiv SVG | Eventnavn</title>
+    <link rel="stylesheet" href="./css/starter.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mystyle.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-content">
+        <a class="site-logo" href="./">Gnome Recognition Foundation</a>
+        <nav class="site-nav">
+          <button>Menu</button>
+          <ul class="menu" id="menu" popover>
+            <li><a href="./" aria-current="page">Forside</a></li>
+            <li><a href="./svg.html">SVG 1</a></li>
+            <li><a href="./svg2.html">SVG 2</a></li>
+            <li><a href="./form.html">Formular</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="svg-page">
+        <header class="svg-intro">
+          <h1>Interaktiv SVG</h1>
+          <p>Indsæt din egen SVG og forbind den med punkterne nedenfor.</p>
+        </header>
+
+        <section class="svg-layout">
+          <div class="mingle-svg">
+            <div class="map-wrapper">
+              <svg class="mingle-map" viewBox="0 0 1536 1030.48">
+                <use href="./img/mingle-simple.svg#background"></use>
+                <use class="location-tea semi-transparent" href="./img/mingle.svg#tea-grove" x="150" y="200" width="190" height="184" />
+                <use class="location-tinker semi-transparent" href="./img/mingle.svg#tinker-terrace" x="1200" y="300" width="190" height="184" />
+                <use class="location-story semi-transparent" href="./img/mingle.svg#story-circle" x="150" y="600" width="190" height="184" />
+                <use class="location-moonlight semi-transparent" href="./img/mingle.svg#moonlight-music" x="1200" y="650" width="190" height="184" />
+                <use class="gnome" href="./img/gnome-redrawn.svg#gnome"></use>
+              </svg>
+            </div>
+          </div>
+
+          <article class="panel">
+            <h2>Udforsk eventet</h2>
+            <div class="accordion">
+              <!-- TODO: Lav om til details/summary -->
+              <summary class="accordion-item">
+                <h3>Tea Grove</h3>
+                <details id="details-first" name="accordion-info">
+                  <p>Beskriv første område, aktivitet eller del af dit event.</p>
+                </details>
+              </summary>
+              <summary class="accordion-item">
+                <h3>Tinker Terrace</h3>
+                <details id="details-second" name="accordion-info">
+                  <p>Beskriv andet område, aktivitet eller del af dit event.</p>
+                </details>
+              </summary>
+              <summary class="accordion-item">
+                <h3>Story Circle</h3>
+                <details id="details-third" name="accordion-info">
+                  <p>Beskriv tredje område, aktivitet eller del af dit event.</p>
+                </details>
+              </summary>
+              <summary class="accordion-item">
+                <h3>Moonlight Music</h3>
+                <details id="details-fourth" name="accordion-info">
+                  <p>Beskriv fjerde område, aktivitet eller del af dit event.</p>
+                </details>
+              </summary>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>Eventnavn</p>
+        <p>Footer</p>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
